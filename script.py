@@ -10,7 +10,7 @@ import logging
 connection = cx_Oracle.connect(
     user="totvs",
     password="",
-    dsn="10.3.0.105:1245/JASPE")
+    dsn="ip:porta/JASPE")
 
 df_ora = pd.read_sql("select A1_COD from SA1000 WHERE A1_COD < '0001000' ", con=connection)
 
